@@ -1,0 +1,11 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
++ nocsrf
+GET           /init                           controllers.ActorController.init()
++ nocsrf
+GET           /send                           controllers.ActorController.send()
+
+# Map static resources from the /public folder to the /assets URL path
+GET           /assets/*file                    controllers.Assets.versioned(file)
